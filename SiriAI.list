@@ -1,22 +1,51 @@
 # NAME: AppleIntelligence
-# DESC: Apple Intelligence 相关域名
-DOMAIN-SUFFIX,apple-relay.akamaized.net
-DOMAIN-SUFFIX,apple-relay.apple.com
-DOMAIN-SUFFIX,cp4.cloudflare.com
+# DESC: Apple Intelligence 相关域名及私密中继/Siri依赖规则
+# UPDATED: 2024-11
+
+# > Siri & Apple Intelligence Core
+DOMAIN-KEYWORD,siri
 DOMAIN-SUFFIX,guzzoni.apple.com
 DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,api-siri-prod.apple.com
+DOMAIN,seed.siri.apple.com
+DOMAIN,seed-sequoia.siri.apple.com
+DOMAIN,seed-swallow.siri.apple.com
+DOMAIN,probe.siri.apple.com
+DOMAIN-SUFFIX,guzzzoni-apple-com.v.aaplimg.com
+DOMAIN-SUFFIX,guzzzoni-smoot.v.aaplimg.com
+
+# > Private Relay & Masking (Apple DNS / Cloudflare / Fastly / Akamai)
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.akamaized.net
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-carry-relay.cloudflare.com
 DOMAIN-SUFFIX,apple-relay.fastly-edge.com
-DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
 DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
-DOMAIN,mask-api.fe.apple-dns.net
-DOMAIN,mask-api.icloud.com
-DOMAIN,mask-t.apple-dns.net
 DOMAIN,mask.apple-dns.net
+DOMAIN,mask-t.apple-dns.net
+DOMAIN,mask-api.fe.apple-dns.net
+DOMAIN,mask-api.fe2.apple-dns.net
+
+# > iCloud Services & Gateway
 DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN-SUFFIX,ls.apple.com
-DOMAIN-SUFFIX,mask-h2.icloud.com
 DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN,mask-api.icloud.com
+DOMAIN,mask-boot.icloud.com
+DOMAIN,mask-canary.icloud.com
+DOMAIN,probe.icloud.com
+DOMAIN,pong.icloud.com
+DOMAIN,metrics.icloud.com
+
+# > Location, Weather & Static Assets
+DOMAIN-SUFFIX,ls.apple.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,weatherkit.apple.com
+DOMAIN-SUFFIX,weather-data.apple.com
+DOMAIN-SUFFIX,weather-data-origin.apple.com
 DOMAIN-SUFFIX,apps.mzstatic.com
-DOMAIN-KEYWORD,siri
-DOMAIN-SUFFIX,apple-relay.tasty-edge.com
+DOMAIN-SUFFIX,aapps.mzstatic.com
+
+# > DNS
+DOMAIN,doh.dns.apple.com
